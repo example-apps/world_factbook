@@ -26,7 +26,7 @@ It is encouraged that the program has some way to interact with the code (comman
 
 **Submission**
 
-They are due by End of Day April 19th. Than the next challenge will be listed.
+They are due by End of Day April 19th. Then the next challenge will be listed.
 
 We would like to have submission via this repo. Create a new folder with your name that contains all the files for your working solution and than submit a pull request into the repo.
 
