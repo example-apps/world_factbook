@@ -1,0 +1,4 @@
+require 'country_query/runner'
+
+runner = CountryQuery::Runner.new()
+runner.run
