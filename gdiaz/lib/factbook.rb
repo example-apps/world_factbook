@@ -25,21 +25,19 @@ class Factbook
     end
   end
 
-  def most_populated_country
+  def most_populated_country(code)
     country = sort_data_for(@countries, 'population').first
-    puts "Most Populated Country: #{country.name} with a population of #{country.population}"
+    code.call(country)
   end
 
-  def most_inflated_countries
+  def most_inflated_countries(code)
     inflated_countries = sort_data_for(@countries, 'inflation')[0..4]
-    inflated_countries.each {|c| puts "Name: #{c.name}, Inflation Rate: #{c.inflation}"}
+    inflated_countries.each {|c| code.call(c) }
   end
 
-  def continents_with_countries
-    puts 'Continents:'
+  def continents_with_countries(code)
     @continents.each do |continent|
-      puts "Continent: #{continent.name}"
-      puts 'Countries:'
+      code.call(continent)
       sort_data_for(continent.countries, 'name').each do |country|
         puts country.name
       end
