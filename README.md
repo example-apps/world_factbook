@@ -33,3 +33,5 @@ We would like to have submission via this repo. Create a new folder with your na
 Also a ReadMe in the folder would be great as well so we know how to run, test your solution, and any other information you think is good documenation about this solution you have created.
 
 Also rspec tests are enouraged highly.
+
+[CodeClimate Results](https://codeclimate.com/github/example-apps/world_factbook/)
