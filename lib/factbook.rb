@@ -1,35 +1,73 @@
 require "pry"
 require 'xmlsimple'
-Dir['./lib/parser/*.rb'].each { |path| require path }
+Dir['./lib/**/*.rb'].each { |path| require path }
 
-xml_obj = XmlParser::Convert.new('cia-1996.xml') #file in lib/test_files/
-xml_parsed = xml_obj.xml_parsed
+class Factbook
+  attr_accessor :continents, :countries
+  def initialize
+    xml_obj = XmlParser::Convert.new('cia-1996.xml') #file in lib/test_files/
+    @xml_parsed = xml_obj.xml_parsed
+    @continents = create_continents
+    @countries = create_countries
+    tie_countries_to_continents
+  end
 
-countries = xml_parsed['country'] #Pulls Countries
+  def create_continents
+    @xml_parsed['continent'].inject([]) {|new_arr, conts| new_arr << Continent.new(conts); new_arr}
+  end
 
-## Question 1
-most_pop = countries.select {|s| s.has_key? 'population'}.sort {|a, b| b['population'].to_i <=> a['population'].to_i}.first
-puts "Most Population Country: #{most_pop['name']} with a population of #{most_pop['population']}"
+  def create_countries
+    @xml_parsed['country'].inject([]) {|new_arr, countries| new_arr << Country.new(countries); new_arr}
+  end
 
-2.times {puts "#################################"}
+  def tie_countries_to_continents
+    @countries.each do |country|
+      continent_name = country.data['continent']
+      continent = @continents.select{|c| c.name == continent_name}.last
+      country.continent = continent
+      continent.add_country(country) unless continent.has_country?(country)
+    end
+  end
 
-## Question 2
-inflation_countries = countries.select {|s| s.has_key? 'inflation'}.sort {|a, b| b['inflation'].to_i <=> a['inflation'].to_i}[0..4]
-puts "Highest Inflation Countries:"
-inflation_countries.each {|c| puts "Name: #{c['name']}, Inflation Rate: #{c['inflation']}"}
+  def most_populated_country
+    country = sort_data_for(@countries, 'population').first
+    puts "Most Populated Country: #{country.name} with a population of #{country.population}"
+  end
 
-2.times {puts "#################################"}
+  def most_inflated_countries
+    inflated_countries = sort_data_for(@countries, 'inflation')[0..4]
+    inflated_countries.each {|c| puts "Name: #{c.name}, Inflation Rate: #{c.inflation}"}
+  end
 
-## Question 3
-continents = xml_parsed['continent']
-puts "Continents:"
-names = continents.collect {|continent| continent["name"]}
+  def continents_with_countries
+    puts 'Continents:'
+    @continents.each do |continent|
+      puts "Continent: #{continent.name}"
+      puts 'Countries:'
+      sort_data_for(continent.countries, 'name').each do |country|
+        puts country.name
+      end
+      puts '============================'
+    end
+  end
 
-names.each do |name|
-  #corresponding countries will be selected for continent and sorted by name
-  corresponding_countries = countries.select {|c| c["continent"] == name}.sort {|a, b| a['name'] <=> b['name']}
-  puts "Continent: #{name}"
-  puts "Countries:"
-  corresponding_countries.each{|country| puts country['name']}
-  puts "==================================="
+  private
+
+  def sort_data_for(collection, key_name)
+    collection.sort {|a, b| b.send(key_name).to_i <=> a.send(key_name).to_i}
+  end
+
 end
+
+### Executing Code Will Run
+
+f = Factbook.new
+puts "Answer 1"
+f.most_populated_country
+puts "\n"
+puts "Answer 2"
+f.most_inflated_countries
+puts "\n"
+puts "Answer 3"
+f.continents_with_countries
+
