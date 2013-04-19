@@ -14,19 +14,19 @@ take_input = lambda do
   if input =~ /1|2|3|\i/
     case input
     when '1'
-      output = Proc.new {|country| puts "Most Populated Country: #{country.name} with a population of #{country.population}"}
+      output = proc {|country| puts "Most Populated Country: #{country.name} with a population of #{country.population}"}
       f.most_populated_country(output)
       puts "\n"
       take_input.call
     when '2'
       puts "5 Countries w/ Hightest Inflation rate in 1996 are:"
-      output = Proc.new {|c| puts "Name: #{c.name}, Inflation Rate: #{c.inflation}"}
+      output = proc {|c| puts "Name: #{c.name}, Inflation Rate: #{c.inflation}"}
       f.most_inflated_countries(output)
       puts "\n"
       take_input.call
     when '3'
       puts "Continents w/ Countries Alphabetized:"
-      output = Proc.new do |cont|
+      output = proc do |cont|
         puts "Continent: #{cont.name}"
         puts "Countries:"
       end
