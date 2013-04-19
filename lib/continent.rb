@@ -3,7 +3,6 @@ class Continent
   attr_accessor :name
 
   def initialize(params_hash)
-    #@data = params_hash
     @name = params_hash['name']
     @countries = []
   end

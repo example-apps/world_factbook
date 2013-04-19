@@ -1,7 +1,3 @@
-require "pry"
-require 'xmlsimple'
-Dir['./lib/**/*.rb'].each { |path| require path }
-
 class Factbook
   attr_accessor :continents, :countries
   def initialize
@@ -58,16 +54,3 @@ class Factbook
   end
 
 end
-
-### Executing Code Will Run
-
-f = Factbook.new
-puts "Answer 1"
-f.most_populated_country
-puts "\n"
-puts "Answer 2"
-f.most_inflated_countries
-puts "\n"
-puts "Answer 3"
-f.continents_with_countries
-
