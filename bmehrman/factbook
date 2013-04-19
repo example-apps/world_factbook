@@ -1,0 +1,4 @@
+require_relative 'lib/factbook/main'
+
+app = Factbook::Main.new
+app.run
