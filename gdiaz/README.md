@@ -11,7 +11,7 @@ cd via the command line into gdiaz and run
 
 To get the answers you'd like follow what the prompt asks and enter 1 2 3 or quit to exit
 
-Rspec tests are run typing:
+Rspec tests are run by typing:
 
 * rspec
 
