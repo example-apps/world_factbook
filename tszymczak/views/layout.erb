@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>World</title>
+  <link rel="stylesheet" type="text/css" href="foundation.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class='container'>
+
+  <div class="row">
+    <ul>
+      <li><a href="/most_people">What is the population of the country with the most people? Yes, we know it’s China, but just how many people lived there in 1996?</a></li>
+      <li><a href="/highest_inflation_rates">What are the five countries with the highest inflation rates, and what were those rates in 1996?</a></li>
+      <li><a href="/by_continents">What are the six continents in the file and which countries belong to which continent?</a></li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <%= yield %>
+  </div>
+
+</div>
+
+</body>
+</html>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src='tablesort.js'></script>
+<script src='application.js'></script>
+
+

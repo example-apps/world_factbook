@@ -1,0 +1,20 @@
+<table id ='world'>
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>Population</th>
+      <th>Inflation</th>
+      <th>Continent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @countries.each do |country| %>
+      <tr>
+        <td><%= country.name %></td>
+        <td><%= country.population %></td>
+        <td><%= country.inflation %></td>
+        <td><%= country.continent %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
