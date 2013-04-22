@@ -10,15 +10,26 @@ module WorldFactbook
 
     def list_countries(order=:smallest)
       get_data
-      grouped_countries = @countries.group_by {|c| c.continent }
-      grouped_countries.each do |k , v|
-        puts "In #{k} there is:"
-        sorted = order == :smallest ? v.sort_by {|country| country.name } : v.sort_by {|country| country.name }.reverse
-        sorted.each do |country|
-          puts "--- #{country.name}"
-        end
+      group_countries.each do |k, v|
+        print_countries(k, sort_countries(order, v) )
       end
-      return
+    end
+
+    def group_countries
+      grouped_countries = @countries.group_by {|c| c.continent }
+    end
+
+    def sort_countries(order, countries)
+      sorted = countries.sort_by {|country| country.name }
+      sorted.reverse! if order == :greatest
+      sorted
+    end
+
+    def print_countries(continent, countries)
+      puts "In #{continent} there is:"
+      countries.each do |country|
+        puts "--- #{country.name}"
+      end
     end
 
     def print_result(matches, fact)
@@ -39,7 +50,6 @@ module WorldFactbook
         matches = countries_cleaned(@countries, fact).sort_by { |c| c.send(fact) }
         sorted_reults = method_id == :smallest ? matches.take(limit) : matches.reverse.take(limit)
         print_result(sorted_reults, fact)
-        return
       else
         super
       end
