@@ -42,14 +42,20 @@ module WorldFactbook
       countries.select {|c| !c.send(fact).nil? }
     end
 
+    def sort_data(countries, order, fact)
+      sorted = countries.sort_by { |c| c.send(fact) }
+      sorted.reverse! if order == :greatest
+      sorted
+    end
+
     def method_missing(method_id, *arguments, &block)
       if [:smallest, :greatest].include?(method_id)
         get_data
         fact = arguments.first
         limit = arguments.last
-        matches = countries_cleaned(@countries, fact).sort_by { |c| c.send(fact) }
-        sorted_reults = method_id == :smallest ? matches.take(limit) : matches.reverse.take(limit)
-        print_result(sorted_reults, fact)
+        matches = countries_cleaned(@countries, fact)
+        results = sort_data(matches, method_id, fact).take(limit)
+        print_result(results, fact)
       else
         super
       end
