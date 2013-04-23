@@ -1,13 +1,8 @@
-kata starter
+World Fact Book
 ================
 
-This is a repo that can easily be used to start a code kata.
+This is a project that lets you traverse the World Fact Book xml and find facts that you might be looking for
 
-##### Included is:
-
-- rsepc
-- autotest (with growl notifications)
-- pry
 
 #### To setup
 
@@ -17,10 +12,60 @@ $ cd <directory>
 $ bundle install
 ```
 
-if you would like autotest to run as you are coding:
+You can run test with:
 
 ```
-$ autotest
+$ rspec
 ```
-it will auto run the rsepc test when a a test is edited or created as well
-if your code is changed.
+#### To find fact use the DSL
+
+To start the program:
+
+```
+$ script/console
+```
+
+Than you can ask your question:
+
+* available methods [greatest, smallest, list_countries]
+* have you can pass options to the method
+  * :inflation
+  * :infant_mortality
+  * :total_area
+  * :population
+  * limit as initeger
+  * [:smallest, greatest]
+
+
+### Examples:
+
+Defaults to 1 result
+
+```
+WorldFactbook.greatest(:population)
+```
+or pass limit
+
+```
+WorldFactbook.smallest(:population, 5)
+```
+
+To get the country / continent list
+
+defaults to A-Z
+
+```
+WorldFactbook.list_countries
+```
+
+to specify sort order
+
+```
+WorldFactbook.list_countries(:greatest)
+```
+
+or
+
+```
+WorldFactbook.list_countries(:smallest)
+```

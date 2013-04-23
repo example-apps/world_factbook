@@ -52,7 +52,7 @@ module WorldFactbook
       if [:smallest, :greatest].include?(method_id)
         get_data
         fact = arguments.first
-        limit = arguments.last
+        limit = arguments.last == fact ? 1 : arguments.last
         matches = countries_cleaned(@countries, fact)
         results = sort_data(matches, method_id, fact).take(limit)
         print_result(results, fact)
