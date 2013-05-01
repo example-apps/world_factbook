@@ -1,0 +1,40 @@
+<h1>1996 CIA Country Information</h1>
+
+<div id="my_answer">
+	<% if @final_value.nil? || @selected_country.nil? || @selected_attribute.nil? %>
+		Please select a country and attribute.
+  <% elsif @final_value.empty? %>
+  	Data is not available.  Please try a different attribute.
+  <% else %>
+		<%= @selected_attribute.humanize.titleize %> of <%= @selected_country %>: <%= display_final_value(@final_value)%>.
+  <% end %>  
+</div>
+
+<%= form_tag(get_attribute_data_path, :method => :get) do %>
+	<div>
+    <h2>Select a country:</h2>
+	  <ul id="myList" style="list-style:none">
+	    <% @countries.each do |country| %>
+	      <li><%= radio_button_tag("country_value", country, false)%> <%= country %> <br/></li>
+	    <% end %>
+	  </ul>
+  </div>
+
+  <br/>
+
+  <div>
+	  <h2>Select an attribute:</h2>
+	  <ul style="list-style:none">
+      <% @attrs.each do |attr| %>
+		    <li><%= radio_button_tag("set_attrb", attr, false) %> <%= attr.humanize.titleize %> <br/></li>
+	    <% end %>
+	  </ul>
+  </div>
+
+	<br/>
+	<%= submit_tag 'Get Data', :submit => 'radio_buttons' %>
+
+	<br/><br/>
+<% end %>
+
+	

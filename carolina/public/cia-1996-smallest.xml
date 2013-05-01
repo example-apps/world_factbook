@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cia SYSTEM "cia.dtd">
+<cia>
+<country id='cid-cia-Albania' 
+  continent='Europe'
+  name='Albania'
+  datacode='AL'
+  total_area='28750'
+  population='3249136'
+  population_growth='1.34'
+  infant_mortality='49.2'
+  gdp_agri='55'
+  inflation='16'
+  gdp_total='4100'
+  indep_date='28 11 1912'
+  government='emerging democracy'
+  capital='Tirane'>
+  <ethnicgroups name='Greeks'>3</ethnicgroups>
+  <ethnicgroups name='Albanian'>95</ethnicgroups>
+  <religions name='Muslim'>70</religions>
+  <religions name='Roman Catholic'>10</religions>
+  <religions name='Albanian Orthodox'>20</religions>
+  <borders country='cid-cia-Greece'>282</borders>
+  <borders country='cid-cia-Macedonia'>151</borders>
+  <borders country='cid-cia-Serbia-and-Montenegro'>287</borders>
+  <coasts>Adriatic Sea</coasts>
+  <coasts>Ionian Sea</coasts>
+  <coasts>Serbia</coasts>
+  <coasts>Montenegro</coasts>
+</country>
+</cia>

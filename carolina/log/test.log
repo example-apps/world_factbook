@@ -1,0 +1,2537 @@
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  Rendered searches/show.html.erb (3.5ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (42.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:15:26 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:15:26 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#index as HTML
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" [0m
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:15:26 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:15:26 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.2ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 5ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:15:26 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:15:26 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:15:26 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:15:26 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{"these"=>"params"}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:15:26 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:15:26 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:15:26 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:15:26 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.0ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "searches" 
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:15:26 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:15:26 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "searches" 
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:15:26 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:15:26 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" ORDER BY "searches"."id" DESC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:15:26 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:15:26 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#new as HTML
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:15:26 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:15:26 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:15:26 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:15:26 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:15:26 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:15:26 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (42.0ms)[0m  [1mDELETE FROM "searches" WHERE "searches"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches
+Completed 302 Found in 45ms (ActiveRecord: 42.2ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:15:27 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:15:27 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "searches" 
+Processing by SearchesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.0ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "searches" WHERE "searches"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "searches" [0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/searches" for 127.0.0.1 at 2013-04-17 23:15:27 -0500
+Processing by SearchesController#index as HTML
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" 
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  Rendered searches/_form.html.erb (55.7ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  Rendered searches/_form.html.erb (1.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  Rendered searches/_form.html.erb (41.1ms)
+  Rendered searches/new.html.erb (48.5ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mCountry Load (1.6ms)[0m  SELECT "countries".* FROM "countries" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  Rendered searches/_form.html.erb (1.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (28.3ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:23:58 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:23:58 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#index as HTML
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" 
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:23:58 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:23:58 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "searches" 
+Processing by SearchesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.2ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (41.9ms)[0m  [1mDELETE FROM "searches" WHERE "searches"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches
+Completed 302 Found in 45ms (ActiveRecord: 42.3ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "searches" [0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:23:58 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:23:58 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.0ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "searches" WHERE "searches"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "searches" [0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:23:58 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:23:58 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "searches" [0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:23:58 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:23:58 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" ORDER BY "searches"."id" DESC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:23:58 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:23:58 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:23:58 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:23:58 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:23:58 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:23:58 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by SearchesController#new as HTML
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:23:58 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:23:58 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{"these"=>"params"}, "id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:23:58 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:23:58 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:23:58 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:23:58 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[35mSearch Load (0.0ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:23:58 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:23:58 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:23:58 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:23:58 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+
+
+Started GET "/searches" for 127.0.0.1 at 2013-04-17 23:23:58 -0500
+Processing by SearchesController#index as HTML
+  [1m[36mSearch Load (0.2ms)[0m  [1mSELECT "searches".* FROM "searches" [0m
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mCountry Load (1.5ms)[0m  SELECT "countries".* FROM "countries" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT "countries".* FROM "countries" LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  Rendered searches/index.html.erb (15.9ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  Rendered searches/_form.html.erb (64.8ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (21.8ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:25:57 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:25:57 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.2ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 39ms (Views: 37.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:25:57 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:25:57 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#index as HTML
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" [0m
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#new as HTML
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:25:57 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:25:57 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:25:57 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:25:57 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{"these"=>"params"}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:25:57 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:25:57 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.0ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:25:57 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:25:57 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:25:57 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:25:57 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:25:57 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:25:57 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:25:57 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:25:57 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "searches" [0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:25:57 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:25:57 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "searches" [0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:25:57 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:25:57 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" ORDER BY "searches"."id" DESC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:25:57 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:25:57 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "searches" [0m
+Processing by SearchesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (35.7ms)[0m  DELETE FROM "searches" WHERE "searches"."id" = ?  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches
+Completed 302 Found in 39ms (ActiveRecord: 35.9ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "searches" 
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:25:57 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:25:57 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "searches" WHERE "searches"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/searches" for 127.0.0.1 at 2013-04-17 23:25:57 -0500
+Processing by SearchesController#index as HTML
+  [1m[35mSearch Load (0.2ms)[0m  SELECT "searches".* FROM "searches" 
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered searches/_form.html.erb (1.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  Rendered searches/_form.html.erb (5.7ms)
+  Rendered searches/edit.html.erb (12.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (6.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:26:29 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:26:29 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.2ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+  [1m[35m (20.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:26:29 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:26:29 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:26:29 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:26:29 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#index as HTML
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" [0m
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#new as HTML
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:26:29 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:26:29 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{"these"=>"params"}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:26:29 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:26:29 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:26:29 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:26:29 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:26:29 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:26:29 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:26:29 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:26:29 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "searches" 
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:26:29 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:26:29 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "searches" 
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:26:29 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:26:29 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:26:29 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:26:29 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" ORDER BY "searches"."id" DESC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:26:29 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:26:29 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "searches" [0m
+Processing by SearchesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSearch Load (0.2ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "searches" WHERE "searches"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches
+Completed 302 Found in 4ms (ActiveRecord: 0.8ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "searches" 
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:26:29 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:26:29 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSearch Load (0.0ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "searches" WHERE "searches"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCountry Load (0.1ms)[0m  SELECT "countries".* FROM "countries" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT "countries".* FROM "countries" LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/searches" for 127.0.0.1 at 2013-04-17 23:26:29 -0500
+Processing by SearchesController#index as HTML
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" 
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered searches/_form.html.erb (1.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/searches" for 127.0.0.1 at 2013-04-17 23:28:12 -0500
+Processing by SearchesController#index as HTML
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" 
+  Rendered searches/index.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 72ms (Views: 67.4ms | ActiveRecord: 2.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCountry Load (1.9ms)[0m  [1mSELECT "countries".* FROM "countries" LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mCountry Load (0.1ms)[0m  SELECT "countries".* FROM "countries" 
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  Rendered searches/_form.html.erb (54.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  Rendered searches/_form.html.erb (1.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (19.0ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:28:13 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:28:13 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSearch Load (0.2ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (39.4ms)[0m  DELETE FROM "searches" WHERE "searches"."id" = ?  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches
+Completed 302 Found in 42ms (ActiveRecord: 39.7ms)
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:28:13 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:28:13 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "searches" [0m
+Processing by SearchesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "searches" WHERE "searches"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "searches" 
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:28:13 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:28:13 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:28:13 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:28:13 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "searches" 
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:28:13 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:28:13 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "searches" 
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:28:13 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:28:13 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" ORDER BY "searches"."id" DESC LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:28:13 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:28:13 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSearch Load (0.0ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by SearchesController#new as HTML
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:28:13 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:28:13 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#index as HTML
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" 
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:28:13 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:28:13 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:28:13 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:28:13 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:28:13 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:28:13 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:28:13 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:28:13 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{"these"=>"params"}, "id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:28:13 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:28:13 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  Rendered searches/show.html.erb (5.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCountry Load (24.7ms)[0m  SELECT "countries".* FROM "countries" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT "countries".* FROM "countries" LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "searches" 
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (50.5ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:29:08 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:29:08 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 56ms (ActiveRecord: 50.7ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "searches" 
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:29:08 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:29:08 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:29:08 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:29:08 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" ORDER BY "searches"."id" DESC LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:29:08 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:29:08 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{"these"=>"params"}, "id"=>"1"}
+  [1m[36mSearch Load (0.2ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:29:08 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:29:08 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.0ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:29:08 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:29:08 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.0ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:29:08 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:29:08 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:29:08 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:29:08 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:29:08 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:29:08 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:29:08 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:29:08 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#index as HTML
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" [0m
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#new as HTML
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:29:08 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:29:08 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:29:08 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:29:08 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "searches" [0m
+Processing by SearchesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (7.4ms)[0m  DELETE FROM "searches" WHERE "searches"."id" = ?  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches
+Completed 302 Found in 10ms (ActiveRecord: 7.6ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "searches" 
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:29:08 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:29:08 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "searches" WHERE "searches"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  Rendered searches/_form.html.erb (42.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  Rendered searches/_form.html.erb (1.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/searches" for 127.0.0.1 at 2013-04-17 23:29:09 -0500
+Processing by SearchesController#index as HTML
+  [1m[35mSearch Load (0.2ms)[0m  SELECT "searches".* FROM "searches" 
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mCountry Load (1.5ms)[0m  SELECT "countries".* FROM "countries" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started GET "/searches" for 127.0.0.1 at 2013-04-17 23:39:02 -0500
+Processing by SearchesController#index as HTML
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" [0m
+  Rendered searches/index.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 78ms (Views: 75.6ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  Rendered searches/_form.html.erb (336.7ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (145.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:39:19 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:39:19 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.3ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 58ms (Views: 20.6ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:39:19 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:39:19 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#new as HTML
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:39:19 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:39:19 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "searches" [0m
+Processing by SearchesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (46.8ms)[0m  DELETE FROM "searches" WHERE "searches"."id" = ?  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches
+Completed 302 Found in 50ms (ActiveRecord: 47.0ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "searches" 
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:39:19 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:39:19 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "searches" WHERE "searches"."id" = ?  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:39:19 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:39:19 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+  [1m[36m (1.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "searches" [0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[35m (0.7ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:39:19 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:39:19 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "searches" [0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:39:19 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:39:19 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" ORDER BY "searches"."id" DESC LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:39:19 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:39:19 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.2ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 44ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (13.6ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:39:20 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:39:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{"these"=>"params"}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:39:20 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:39:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.0ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:39:20 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:39:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:39:20 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:39:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:39:20 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:39:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#index as HTML
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" [0m
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  Rendered searches/_form.html.erb (2.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mCountry Load (0.2ms)[0m  SELECT "countries".* FROM "countries" 
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT "countries".* FROM "countries" LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (73.9ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:46:56 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:46:56 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#index as HTML
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" [0m
+  Rendered searches/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2206ms (Views: 2204.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (207.8ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:46:58 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:46:58 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{"these"=>"params"}, "id"=>"1"}
+  [1m[36mSearch Load (0.2ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 214ms (Views: 211.2ms | ActiveRecord: 0.2ms)
+  [1m[35m (204.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:46:59 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:46:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+  [1m[35m (254.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:46:59 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:46:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.0ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:46:59 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:46:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 16ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+  [1m[35m (14.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:46:59 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:46:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#new as HTML
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:46:59 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:46:59 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (13.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "searches" 
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:46:59 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:46:59 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "searches" 
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:46:59 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:46:59 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:46:59 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:46:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+  [1m[36mSearch Load (0.2ms)[0m  [1mSELECT "searches".* FROM "searches" ORDER BY "searches"."id" DESC LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:46:59 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:46:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:46:59 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:46:59 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "searches" [0m
+Processing by SearchesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (36.5ms)[0m  DELETE FROM "searches" WHERE "searches"."id" = ?  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches
+Completed 302 Found in 40ms (ActiveRecord: 36.7ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "searches" 
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:46:59 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:46:59 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSearch Load (0.0ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "searches" WHERE "searches"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+  [1m[35m (11.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCountry Load (21.2ms)[0m  SELECT "countries".* FROM "countries" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT "countries".* FROM "countries" LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mCountry Load (0.2ms)[0m  SELECT "countries".* FROM "countries" LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+
+
+Started GET "/searches" for 127.0.0.1 at 2013-04-17 23:46:59 -0500
+Processing by SearchesController#index as HTML
+  [1m[36mSearch Load (0.2ms)[0m  [1mSELECT "searches".* FROM "searches" [0m
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  Rendered searches/_form.html.erb (42.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  Rendered searches/_form.html.erb (1.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  Rendered searches/_form.html.erb (6.2ms)
+  Rendered searches/new.html.erb (12.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  Rendered searches/_form.html.erb (1.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mCountry Load (1.5ms)[0m  SELECT "countries".* FROM "countries" 
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT "countries".* FROM "countries" LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mCountry Load (0.1ms)[0m  SELECT "countries".* FROM "countries" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+
+
+Started GET "/searches" for 127.0.0.1 at 2013-04-17 23:47:59 -0500
+Processing by SearchesController#index as HTML
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" [0m
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (4.5ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:47:59 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:47:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "searches" [0m
+Processing by SearchesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "searches" WHERE "searches"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "searches" 
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:47:59 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:47:59 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSearch Load (0.0ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "searches" WHERE "searches"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+  [1m[35m (36.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:48:00 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:00 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:48:00 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:00 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "searches" [0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:48:00 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:00 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "searches" [0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:48:00 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:00 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" ORDER BY "searches"."id" DESC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:48:00 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:00 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#index as HTML
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" [0m
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (2.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:48:00 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:00 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:48:00 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:00 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{"these"=>"params"}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:48:00 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:00 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.0ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:48:00 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:00 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:48:00 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:00 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#new as HTML
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:48:00 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:00 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  Rendered searches/show.html.erb (3.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (5.8ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:48:21 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:21 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#index as HTML
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" [0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.1ms)
+  [1m[35m (5.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:48:21 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:21 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.2ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#new as HTML
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:48:21 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:21 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "searches" [0m
+Processing by SearchesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "searches" WHERE "searches"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "searches" 
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:48:21 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:21 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "searches" WHERE "searches"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:48:21 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:21 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:48:21 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:21 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{"these"=>"params"}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:48:21 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:21 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.0ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:48:21 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:21 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:48:21 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:21 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (11.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:48:21 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:21 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.0ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "searches" 
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:48:21 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:21 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "searches" 
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:48:21 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:21 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:48:21 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:21 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" ORDER BY "searches"."id" DESC LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/searches" for 127.0.0.1 at 2013-04-17 23:48:21 -0500
+Processing by SearchesController#index as HTML
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" 
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  Rendered searches/_form.html.erb (4.9ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT "countries".* FROM "countries" LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mCountry Load (0.1ms)[0m  SELECT "countries".* FROM "countries" 
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT "countries".* FROM "countries" LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  Rendered searches/_form.html.erb (1.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/searches" for 127.0.0.1 at 2013-04-17 23:48:52 -0500
+Processing by SearchesController#index as HTML
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" 
+  Rendered searches/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 39ms (Views: 35.8ms | ActiveRecord: 1.7ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered searches/_form.html.erb (5.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  Rendered searches/_form.html.erb (1.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (6.7ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:48:52 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:52 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#index as HTML
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" 
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:48:52 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:52 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSearch Load (0.2ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:48:52 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:52 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:48:52 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:52 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:48:52 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:52 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{"these"=>"params"}, "id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:48:52 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:52 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[35mSearch Load (0.0ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:48:52 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:52 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:48:52 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:52 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:48:52 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:52 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "searches" 
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:48:52 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:52 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "searches" 
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:48:52 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:52 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" ORDER BY "searches"."id" DESC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+Completed 200 OK in 24ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by SearchesController#new as HTML
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:48:52 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:52 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "searches" 
+Processing by SearchesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "searches" WHERE "searches"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "searches" [0m
+  [1m[35m (0.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:48:52 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:48:52 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.0ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "searches" WHERE "searches"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT "countries".* FROM "countries" [0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mCountry Load (0.1ms)[0m  SELECT "countries".* FROM "countries" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT "countries".* FROM "countries" LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  Rendered searches/_form.html.erb (55.0ms)
+  Rendered searches/edit.html.erb (65.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (41.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:49:53 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:49:53 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#index as HTML
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" [0m
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:49:53 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:49:53 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.2ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:49:53 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:49:53 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.0ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:49:53 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:49:53 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{"these"=>"params"}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:49:53 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:49:53 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:49:53 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:49:53 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:49:53 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:49:53 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" ORDER BY "searches"."id" DESC LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:49:53 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:49:53 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "searches" [0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:49:53 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:49:53 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "searches" [0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:49:53 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:49:53 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "searches" [0m
+Processing by SearchesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (8.4ms)[0m  DELETE FROM "searches" WHERE "searches"."id" = ?  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches
+Completed 302 Found in 12ms (ActiveRecord: 8.7ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "searches" 
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:49:53 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:49:53 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSearch Load (0.0ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "searches" WHERE "searches"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+  [1m[35m (10.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#new as HTML
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:49:53 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:49:53 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:49:53 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:49:53 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mCountry Load (0.1ms)[0m  SELECT "countries".* FROM "countries" 
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT "countries".* FROM "countries" LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCountry Load (0.2ms)[0m  SELECT "countries".* FROM "countries" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  Rendered searches/_form.html.erb (1.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started GET "/searches" for 127.0.0.1 at 2013-04-17 23:49:53 -0500
+Processing by SearchesController#index as HTML
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" [0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/searches" for 127.0.0.1 at 2013-04-17 23:50:38 -0500
+Processing by SearchesController#index as HTML
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" 
+  Rendered searches/index.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 37ms (Views: 33.2ms | ActiveRecord: 1.6ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  Rendered searches/_form.html.erb (6.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (6.3ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:50:39 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:50:39 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{"these"=>"params"}, "id"=>"1"}
+  [1m[35mSearch Load (0.2ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:50:39 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:50:39 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[35mSearch Load (0.0ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:50:39 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:50:39 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[35mSearch Load (0.0ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:50:39 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:50:39 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:50:39 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:50:39 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#update as HTML
+  Parameters: {"search"=>{}, "id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:50:39 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:50:39 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:50:39 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:50:39 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "searches" [0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:50:39 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:50:39 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "searches" [0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:50:39 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:50:39 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:50:39 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:50:39 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" ORDER BY "searches"."id" DESC LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{}}
+Completed 200 OK in 24ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:50:39 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:50:39 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "searches" 
+Processing by SearchesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "searches" WHERE "searches"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "searches" [0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 18 Apr 2013 04:50:39 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:50:39 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SearchesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.1ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "searches" WHERE "searches"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by SearchesController#new as HTML
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "searches" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 18 Apr 2013 04:50:39 UTC +00:00], ["updated_at", Thu, 18 Apr 2013 04:50:39 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SearchesController#index as HTML
+  [1m[35mSearch Load (0.1ms)[0m  SELECT "searches".* FROM "searches" 
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  Rendered searches/_form.html.erb (1.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT "countries".* FROM "countries" [0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mCountry Load (0.1ms)[0m  SELECT "countries".* FROM "countries" LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT "countries".* FROM "countries" LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
